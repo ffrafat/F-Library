@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>আমার বইয়ের তাক</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="sticky-header">
+    <div class="logo">📚 আমার বইয়ের তাক</div>
+    <button class="hamburger" onclick="toggleMenu()">☰</button>
+    <nav class="menu" id="mainMenu">
+      <a href="#">বই</a>
+      <a href="#">সংগ্রহ</a>
+      <a href="#">যোগাযোগ</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="filter-bar">
+      <input type="text" id="search" placeholder="🔍 খুঁজুন... (নাম / লেখক)" />
+      <select id="categoryFilter">
+        <option value="">📚 বিভাগ</option>
+      </select>
+      <select id="languageFilter">
+        <option value="">🌐 ভাষা</option>
+      </select>
+    </div>
+    <div id="bookCards" class="card-grid"></div>
+  </main>
+
+  <footer class="footer">
+    © ২০২৫ আমার বইয়ের তাক — সর্বস্বত্ব সংরক্ষিত।
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
